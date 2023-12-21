@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/ce45dcfbaf.js" crossorigin="anonymous"></script>
+    
+
+
+</head>
+
+<body>
+    <section>
+        <div id="header">
+            <div class="container" data-aos="fade-in" data-aos-duration="2000">
+                <nav>
+                    <a href="landing.html"><img src="logos/logo-no-background.png" alt="logo" class="logo"></a>
+                    <ul id="sidemenu">
+                        <li>
+                            <form class="search-form" action="/search" method="GET">
+                            <input type="text" name="query" placeholder="Search Anyone">
+                            <button type="submit">Search</button>
+                            </form>
+                        </li>
+                        <li><a href="signin.html" target="_blank">Sign In</a></li>
+                        <li><a href="signin.html">Sign Up</a></li>
+                        <li><a href="#why">Why Connect</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                
+            
+            </div>
+            <div id="main-text" data-aos="fade-in" data-aos-duration="1500">
+                <h1>Connect</h1>
+                <p>Collaborate, Create, Conquer</p>
+                <button><a href="#sign" class="btn">Find a Team</a></button>
+            </div>
+
+            <div class="earth" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="logos/earth.png" alt="earth">
+            </div>
+            
+        
+        </div>
+    </section>
+
+
+
+
+    <section id="why">
+        
+        <div class="why" data-aos="flip-left" data-aos-duration="2000" data-aos-offset="600">
+            
+            
+            <ul>
+                <li>
+                    <div class="why-card" data-aos="fade-right" data-aos-duration="1800">
+                        <h1>Seamless collaboration</h1>
+                        <p>Connect with people from all over the world and work together to create something amazing.</p>
+                </li>
+                <li>
+                    <div class="why-card" data-aos="fade-left" data-aos-duration="1800">
+                        <h1>Find your team</h1>
+                        <p>Find people with similar interests and skills to work with.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="why-card" data-aos="fade-right" data-aos-duration="1800">
+                        <h1>Build your portfolio</h1>
+                        <p>Work on projects and build your portfolio to showcase your skills.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="why-card" data-aos="fade-left" data-aos-duration="1800">
+                        <h1>Get inspired</h1>
+                        <p>Get inspired by other people's work and learn from them.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="why-card" data-aos="fade-right" data-aos-duration="1800">
+                        <h1>Get feedback</h1>
+                        <p>Get feedback on your work from other people.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="why-card"data-aos="fade-left" data-aos-duration="1800">
+                        <h1>Learn new skills</h1>
+                        <p>Learn new skills from other people.</p>
+                    </div>
+                </li>
+            </ul>              
+        </div>
+    </section>
+
+
+
+    <section id="about">
+        <div class="about" data-aos="slide-up" data-aos-duration="1800">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-in" data-aos-duration="2000">
+                    <img src="logos/logo-white.png" alt="Connect">
+                </div>
+                <div class="about-col-2" data-aos="fade-right" data-aos-duration="1800">
+                    <h1 class="sub-title">About Us</h1>
+                    <p id="col">Welcome to Connect!
+                        <br>
+                        At Connect, we believe that <span>collaboration is the key to success.</span> Our platform is designed to connect individuals with <span>like-minded teams, fostering innovation, and achieving common goals.</span> Whether you're a developer, designer, marketer, or any other professional, we're here to help you find your perfect team.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('mission')">Our Mission</p>
+                        <p class="tab-links" onclick="opentab('team')">Our Team</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="mission">
+                        <ul>
+                            <li><span>Empower individuals</span> to discover and join teams aligned with their passions, skills, and aspirations.</li>
+                            <li><span>Provide a platform</span> for talent to meet opportunities, unlocking individuals' full potential.</li>
+                            <li><span>Foster innovation and impactful collaborations</span> through team-based projects.</li>
+                            <li><span>Enable individuals</span> to contribute to exciting initiatives and make a difference in their chosen fields.</li>
+                          </ul>
+                    </div>
+
+                    <div class="tab-contents" id="team">
+                        <ul>
+                            <li><span>Armaan Singh</span></li>
+                            <li><span>Akshit Gulyan</span></li>
+                            <li><span>Aditya Pachauri</span></li>
+                            <li><span>Gaushi Gupta</span></li>
+                            <li><span>Sarthak Dubey</span></li>
+                          </ul>
+                          <p>Behind the scenes, our dedicated team at <span>Connect</span> works tirelessly to enhance your team-finding experience. Together, we strive to make your journey on <span>Connect</span> as smooth and rewarding as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+
+        let sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0px";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 300, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
